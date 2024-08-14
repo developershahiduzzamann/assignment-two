@@ -363,7 +363,7 @@ body{
 	left: 7%;
 }
 .title-two{
-    display: none;
+       
 }
 .title-three {
 	position: absolute;
@@ -448,10 +448,12 @@ body{
 	margin-top: 15px;
 	width: 74%;
 }
+.calculator-one{
+    width: 60%;
+}
 .form-one {
 	margin-top: 30px;
 }
-
 .form-two {
     display: flex;
     flex-wrap: wrap;
@@ -526,7 +528,7 @@ body{
 .select-four {
 	position: absolute;
 	top: 12px;
-	left: 93.5%;
+	left: 92%;
 	transform: rotate(180deg);
 	color: rgba(255, 255, 255, 0.3);
 	bottom: 12px;
@@ -569,11 +571,11 @@ body{
 	margin: 0 auto;
 	padding-top: 10px;
 }
-.meet-one{
-    max-width: 1440px;
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 0 auto;
+.meet-one {
+	max-width: 992px;
+	border-radius: 18px;
+	background: rgba(255, 255, 255, 0.1);
+	margin: 0 auto;
 }
 .meet-two{
     display: flex;
@@ -679,7 +681,7 @@ body{
 .footer-head {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 55px 0;
+	padding: 55px 0 35px 0;
 }
 #footer{
     background-color: #222222;
@@ -696,22 +698,23 @@ body{
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 20px;
 	font-weight: 400;
-	line-height: 100%;
-	padding-top: 22px;
+	line-height: 130%;
+    cursor: pointer;
 }
 .footer-child{
-    width: 33%;
+    width: 60%;
     margin-top: 30px;
 }
-.footer-title{
-    font-size: 3rem;
-    font-style: italic;
-    color: #E6533C;
+.footer-title {
+	font-size: 3rem;
+	font-style: italic;
+	color: #E6533C;
 }
-.footer-subtitle{
-    margin-top: 15px;
-    line-height: 25px;
-    opacity: 0.7;
+.footer-subtitle {
+	margin-top: 15px;
+	line-height: 25px;
+	opacity: 0.7;
+    width: 55%;
 }
 .footer-child-title{
     font-size: 1.7rem;
@@ -725,7 +728,7 @@ body{
 .line{
     width: 1440px;
     margin: 0 auto;
-    color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-buttom {
 	max-width: 1440px;
@@ -741,11 +744,25 @@ body{
     letter-spacing: 0.3px
 }
 
+
 /* small device */
 @media screen and (max-width:576px) {
     /* Header Section start */
-    #Trainings{
+    .exercises{
         display: none;
+     }
+     .Trainings-imsges{
+        display: none;
+     }
+     .bmi-calculator {
+        margin-top: 70px;
+        margin-left: 3%;
+    }
+    .Calculator-title {
+        color: rgb(255, 255, 255);
+        font-size: 1.8rem;
+        font-weight: 800;
+        line-height: 120%;
     }
     .nav{
         display: flex;
@@ -780,7 +797,7 @@ body{
     }
     .header-secondary-subtitle {
         font-size: 1.0rem;
-        max-width: 70%;
+        max-width: 53%;
     }
     .btn-primary {
         padding: 14px 42px;
@@ -802,7 +819,7 @@ body{
     }
     .child-two {
         bottom: 444px;
-        right: -99px;
+        right: -71px;
     }
     /* Main Seection Start */
     .habit{
@@ -864,17 +881,17 @@ body{
         flex-direction: row;
     }
     .input-one {
-        width: 193px;
+        width: 252px;
     }
     .form-five{
         display: flex;
         flex-direction: row;
     }
     .select-one {
-        width: 210px;
+        width: 267px;
     }
     .select-two {
-        width: 430px;
+        width: 545px;
     }
     .team-title {
         font-size: 2.0rem;
@@ -894,12 +911,140 @@ body{
         font-weight: 700;
     }
     .select-four {
-        left: 69%;
+        left: 87.7%;
     }
     .select-three{
         left: 80%;
     }
     .padding {
         padding: 22px 0px;
+    }
+    .footer-parent {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    .footer-subtitle{
+        width: 100%;
+    }  
+    .footer-child-two, .footer-child-three{
+        margin-top: 50px;
+    }
+    .line{
+        max-width: 550px;
+    }
+}
+@media screen and (min-width:992px){
+    .nav-title{
+        margin-left: 35px;
+    }
+    .nav-menu{
+        margin-right: 24px;
+    }
+    .header-secondary-title{
+        margin-left: 35px;
+    }
+    .header-secondary-subtitle{
+        margin-left: 35px;
+    }
+    .btn{
+        margin-left: 35px;  
+    }
+    .child-one{
+        left: -427px;
+        padding: 15px;
+    }
+    .play-icon{
+        display: block;
+    }
+    .child-two{
+        right: 36px;
+        bottom: 382px;
+    }
+    .child-two-title{
+        font-size: 1.6rem;
+    }
+    .child-two-subtitle{
+        letter-spacing: 0px;
+    }
+    .habit-card{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+     .exercises{
+        display: none;
+     }
+     .Trainings-imsges{
+        display: none;
+     }
+    .input-one{
+        width: 200px;
+    }
+    .select-one {
+        width: 216px;
+    }
+    .select-three{
+        left: 80%;
+    }
+    .select-four {
+        left: 85%;
+    }
+    .select-two {
+        width: 442px;
+    }
+    .calculator-one{
+        margin-left: 35px;
+    }
+    .footer-child{
+        margin-left: 35px;
+        width: 35%;
+    }
+    .footer-child-three{
+        margin-right: 15px;
+    }
+    .line{
+        width: 990px;
+    }
+    .time-table{
+        margin: 0 15px 0 35px;
+    }
+    .padding {
+        padding: 22px 7px;
+    }
+    .footer-parent{
+        max-width: 992px;
+    }
+    .meet-four img{
+        width: 304px;
+        height: 300px;
+    }
+    .calculator-bmi{
+        max-width: 992px;
+    }
+    .calculator-one {
+        width: 100%;
+    }
+    .run{
+        max-width: 992px;
+    }
+    .habits{
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    .nav{
+        max-width: 992px;
+    }
+    .header-primary{
+        max-width: 992px;
+    }
+    .bmi-calculator {
+        margin-top: 70px;
+        margin-left: 17%;
+    }
+    .Calculator-title {
+        color: rgb(255, 255, 255);
+        font-size: 2.5rem;
+        font-weight: 800;
+        line-height: 120%;
     }
 }
