@@ -382,7 +382,7 @@ body{
 /* BMI calculator Start */
 .bmi-calculator {
 	margin-top: 70px;
-	margin-left: 14%;
+	margin-left: 25%;
 }
 .Calculator-title{
     color: rgb(255, 255, 255);
@@ -743,7 +743,6 @@ body{
     letter-spacing: 0.3px
 }
 
-
 /* small device */
 @media screen and (max-width:576px) {
     /* Header Section start */
@@ -981,9 +980,16 @@ body{
      .exercises{
         display: none;
      }
+     #Trainings{
+        max-width: 992px;
+     }
      .Trainings-imsges{
         display: none;
      }
+     .bmi-calculator {
+        margin-top: 70px;
+        margin-left: 14%;
+    }
     .input-one{
         width: 200px;
     }
