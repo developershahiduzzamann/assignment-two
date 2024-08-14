@@ -249,9 +249,10 @@ body{
     margin: 0 auto;
     margin-top: 100px;
 }
-.extra-image img{
-    width: 500px;
-    border-radius: 18px;
+.extra-image img {
+	width: 388px;
+	border-radius: 18px;
+	height: 317px;
 }
 .mile-easily{
     display: flex;
@@ -362,9 +363,6 @@ body{
 	top: 72%;
 	left: 7%;
 }
-.title-two{
-       
-}
 .title-three {
 	position: absolute;
 	top: 72%;
@@ -381,9 +379,10 @@ body{
     font-weight: 500;
     line-height: 17px;
 }
-.bmi-calculator{
-    margin-top: 70px;
-    margin-left: 20%;
+/* BMI calculator Start */
+.bmi-calculator {
+	margin-top: 70px;
+	margin-left: 14%;
 }
 .Calculator-title{
     color: rgb(255, 255, 255);
@@ -919,6 +918,7 @@ body{
     .padding {
         padding: 22px 0px;
     }
+    /* Footer Section start */
     .footer-parent {
         display: flex;
         flex-direction: column;
@@ -934,12 +934,19 @@ body{
         max-width: 550px;
     }
 }
+/* Desktop Responsive */
 @media screen and (min-width:992px){
     .nav-title{
         margin-left: 35px;
     }
     .nav-menu{
         margin-right: 24px;
+    }
+    .nav{
+        max-width: 992px;
+    }
+    .header-primary{
+        max-width: 992px;
     }
     .header-secondary-title{
         margin-left: 35px;
@@ -995,16 +1002,7 @@ body{
     .calculator-one{
         margin-left: 35px;
     }
-    .footer-child{
-        margin-left: 35px;
-        width: 35%;
-    }
-    .footer-child-three{
-        margin-right: 15px;
-    }
-    .line{
-        width: 990px;
-    }
+    
     .time-table{
         margin: 0 15px 0 35px;
     }
@@ -1031,20 +1029,20 @@ body{
         max-width: 992px;
         margin: 0 auto;
     }
-    .nav{
-        max-width: 992px;
-    }
-    .header-primary{
-        max-width: 992px;
-    }
-    .bmi-calculator {
-        margin-top: 70px;
-        margin-left: 17%;
-    }
     .Calculator-title {
         color: rgb(255, 255, 255);
         font-size: 2.5rem;
         font-weight: 800;
         line-height: 120%;
+    }
+    .footer-child{
+        margin-left: 35px;
+        width: 35%;
+    }
+    .footer-child-three{
+        margin-right: 15px;
+    }
+    .line{
+        width: 982px;
     }
 }
