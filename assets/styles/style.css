@@ -12,7 +12,7 @@ body{
     background: linear-gradient(to top, rgb(17, 17, 17),rgba(119, 119, 119, 6) 430%)
 }
 .nav{
-    max-width: 1440px;
+    max-width: 1080px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -58,7 +58,7 @@ body{
 	padding: 12px 30px;
 }
 .header-primary{
-    max-width: 1440px;
+    max-width: 1080px;
     display: flex;
     margin: 0px auto;
     justify-content: space-between;
@@ -185,7 +185,7 @@ body{
     background: rgb(0, 0, 0);
 }
 .habits{
-    max-width: 1440px;
+    max-width: 1080px;
     margin: 0 auto;
     text-align: center;
     
@@ -243,7 +243,7 @@ body{
 }
 /* Start Run Section */
 .run{
-    max-width: 1440px;
+    max-width: 1080px;
     border-radius: 18px;
     background: rgb(34, 34, 34);
     margin: 0 auto;
@@ -289,7 +289,6 @@ body{
     padding: 11px 60px;
     border: none;
     color: rgb(255, 255, 255);
-    font-family: Inter;
     font-size: 1rem;
     font-weight: 600;
     line-height: 22px;
@@ -304,7 +303,7 @@ body{
 }
 /* Trainings section start */
 #Trainings{
-    max-width: 1440px;
+    max-width: 1840px;
     margin: 0 auto;
 }
 .exercises{
@@ -403,7 +402,7 @@ body{
 	padding-bottom: 40px;
 }
 .calculator-bmi {
-	max-width: 1440px;
+	max-width: 1080px;
 	margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -448,7 +447,7 @@ body{
 	width: 74%;
 }
 .calculator-one{
-    width: 60%;
+    /* width: 60%; */
 }
 .form-one {
 	margin-top: 30px;
@@ -548,7 +547,7 @@ body{
 }
 /* Meet our Team */
 .our-team {
-	max-width: 1440px;
+	max-width: 1080px;
 	margin: 0 auto;
 	padding: 30px 0;
 }
@@ -611,7 +610,7 @@ body{
 }
 /* Time Section Start */
 .workout {
-	max-width: 1440px;
+	max-width: 1080px;
 	padding-top: 70px;
 	margin: 0 auto;
 	text-align: center;
@@ -678,7 +677,7 @@ body{
 
 /* start footer section */
 .footer-head {
-	max-width: 1440px;
+	max-width: 1080px;
 	margin: 0 auto;
 	padding: 55px 0 35px 0;
 }
@@ -725,7 +724,7 @@ body{
 }
 
 .line{
-    width: 1440px;
+    width: 1080px;
     margin: 0 auto;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -744,68 +743,60 @@ body{
 }
 
 /* small device */
-@media screen and (max-width:576px) {
+ @media screen and (max-width:576px) {
     /* Header Section start */
-    .exercises{
-        display: none;
-     }
-     .Trainings-imsges{
-        display: none;
-     }
-     .bmi-calculator {
-        margin-top: 70px;
-        margin-left: 3%;
-    }
-    .Calculator-title {
-        color: rgb(255, 255, 255);
-        font-size: 1.8rem;
-        font-weight: 800;
-        line-height: 120%;
-    }
-    .nav{
-        display: flex;
-   } 
     .nav-menu{
         display: none;
-   }
+    }
     .nav-title{
-        margin-left: 15px;
+        margin-left: 10px;
    }
    .icon{
         display: block;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+   }
    .icon i {
         color: #fff;
         font-size: 1.7rem;
         margin-right: 30px;
     }
-   .header-primary{
+    .header-primary{
         display: flex;
         flex-direction: column;
    }
    .header-secondary{
-    margin-left: 15px;
+        margin-left: 10px;
    }
-   .header-secondary-title {
+   .header-secondary-title{
         font-size: 2.7rem;
         line-height: 133%;
-    }
-    .header-secondary-subtitle {
-        font-size: 1.0rem;
-        max-width: 53%;
-    }
-    .btn-primary {
-        padding: 14px 42px;
     }
     .font-style {
 	    font-size: 5.3rem;
     }
+    .header-secondary-subtitle{
+        font-size: 1.0rem;
+        width: 53%;
+    }
+    .btn-primary {
+        padding: 14px 42px;
+    }   
     .header-image{
         margin: 0 auto;
         padding-top: 50px;
+    }
+    .child-two {
+        bottom: 444px;
+        right: -65px;
+        padding: 6px 8px;
+    }
+    .child-two-title {
+        font-size: 2.0rem;
+    }
+    .child-two-subtitle {
+        font-size: 0.7rem;
     }
     .child-one {
         bottom: 239px;
@@ -814,10 +805,6 @@ body{
     }
     .play-icon{
         display: block;
-    }
-    .child-two {
-        bottom: 444px;
-        right: -71px;
     }
     /* Main Seection Start */
     .habit{
@@ -841,81 +828,105 @@ body{
     }
     /* Run Section */
     .run{
-        margin: 70px  20px 0 20px;
+        margin: 70px  10px 0 10px;
     }
     .mile-easily{
         display: flex; 
         flex-direction: column;
     }
-    .extra-image{
-        margin-top: 30px;
-    }
-    .extra-image img{
-      width: 100%;  
-    }
     .run-title {
         font-size: 2.5rem;
     }
     .run-subtitle {
-        width: 93%;
+        width: 67%;
+    }
+    .extra-image{
+        margin-top: 30px;
+    }
+    .extra-image img{
+        width: 100%;  
     }
     .join-primary {
-        padding: 14px 200px;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        margin: 0 auto;
+        height: 56px;
+        width: 100%;
+        text-align: center;
+        font-family: inter;
+        font-weight: 600;
+    }
+    /* Trainings and Exercises */
+    .exercises{
+        display: none;
+    }
+    .Trainings-imsges{
+        display: none;
+    }
+    .bmi-calculator {
+        margin-left: 10px;
+    }
+    .Calculator-title{
+        font-size: 2.2rem;
+    }
+    .Calculator-subtitle{
+        width: 67%;
     }
 /* Bmi calculator start */
     .calculator-bmi{
         display: flex;
         flex-direction: column;
     }
-    .calculator-one{
-        margin-left: 15px;
+    .calculator-one {
+        margin-left: 10px;
     }
     .calculator-two{
-        margin-left: 15px;
+        margin-left: 10px;
     }
-    .form-two{
-        display: flex;
-        flex-direction: row;
+    .cl-table, .row-table, .col-table {
+        padding: 18px 38px;
     }
     .input-one {
-        width: 252px;
-    }
-    .form-five{
-        display: flex;
-        flex-direction: row;
+        width: 176px;
     }
     .select-one {
-        width: 267px;
+        width: 192px;
     }
     .select-two {
-        width: 545px;
+        width: 394px;
     }
-    .team-title {
-        font-size: 2.0rem;
+    .select-three{
+        left: 76%;
     }
-    .team-subtitle {
-        width: 74%;
+    .select-four {
+        left: 61.5%;
     }
-    .meet-one {
-        margin: 0 15px;
-    }
-    .meet-three img {
-        width: 510px;
-        height: 419px;
-    }
+    /* Meet Our Team */
     .meet-five h4 {
         font-size: 1.4rem;
         font-weight: 700;
     }
-    .select-four {
-        left: 87.7%;
+    .team-subtitle{
+        width: 56%;
     }
-    .select-three{
-        left: 80%;
+    .meet-one {
+        max-width: 400px;
+    }
+    .meet-four img {
+        width: 370px;
+        height: 341px;
+    }
+    /* Workout Timetable */
+    .workout-title{
+        font-size: 2.2rem;
     }
     .padding {
         padding: 22px 0px;
+    }
+    .table-tai{
+        font-size: 0.9rem;
+    }
+    .time-table{
+        margin: 0 10px;
     }
     /* Footer Section start */
     .footer-parent {
